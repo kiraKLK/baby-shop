@@ -294,9 +294,9 @@ a {
     width: 1237px;
     height: 183px;
     padding: 50px;
-    justify-content: center;
+    
     align-items: center;
-    gap: 200px;
+    justify-content: space-between;
 }
 
 .shiping__free-description-title {
