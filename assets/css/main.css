@@ -4,16 +4,18 @@
     padding-bottom: 12px;
     justify-content: space-between;
     align-items: center;
-    gap: 146px;
     width: 1240px;
 }
-body{
+
+body {
     margin: 0;
 }
+
 a {
     color: inherit;
     text-decoration: inherit;
 }
+
 .header {
     width: 1240px;
 }
@@ -63,11 +65,14 @@ a {
     /* 24px */
     text-transform: uppercase;
 }
-.header__navbar-item.flex-item{
+
+.header__navbar-item.flex-item {
     cursor: pointer;
 }
 
 .header__navbar-item-search-icon {
+    position: absolute;
+    border-color: transparent;
     width: 38px;
     height: 38px;
     flex-shrink: 0;
@@ -92,6 +97,7 @@ a {
 }
 
 .header__navbar-item-search {
+    position: relative;
     display: flex;
     width: 270px;
     height: 38px;
@@ -101,7 +107,7 @@ a {
 }
 
 .header_navbar-item-search-input {
-    width: 232px;
+    width: 270px;
     border-color: transparent;
     border-radius: 10px;
     background: #EBEBEB;
@@ -124,7 +130,7 @@ a {
 }
 
 .banner__left {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/cfd5c992c59c15a588857c1a88c3e4cb2e46e344) lightgray 50% / cover no-repeat;
+    background: url(../img/Rectangle\ 36@2x.png) lightgray 50% / cover no-repeat;
     width: 821px;
     height: 566px;
     background-color: #FF6363;
@@ -140,14 +146,14 @@ a {
 }
 
 .banner__right-top {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/3b4ac66ddb2d161f1cc006583f16dd632625ad09?fuid=1324183997900156557) lightgray -53.4px -6.004px / 164.45% 110% no-repeat;
+    background: url(../img/Rectangle\ 34.png) lightgray 50% / cover no-repeat;
     width: 400px;
     height: 274px;
     position: relative;
 }
 
 .banner__right-bot {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/d0f7a421f6e244207159a8458059fe0e2c919a0a) lightgray 50% / cover no-repeat;
+    background: url(../img/Rectangle\ 35.png) lightgray 50% / cover no-repeat;
     width: 400px;
     height: 274px;
     background-color: #575454;
@@ -337,6 +343,7 @@ a {
 }
 
 .new-arrivals__title {
+    margin: 0 0 12px 0;
     color: var(--gray, #575454);
     /* heading */
     font-family: Coiny;
@@ -370,17 +377,21 @@ a {
     gap: 20px;
 }
 
-.new-arrivals__products-detail:hover {
-    
+.new-arrivals__products-detail {
+    position: relative;
 
+}
+
+.new-arrivals__products-detail a {
+    display: block;
 }
 
 .new-arrivals__products-detail-img {
-    position: relative;
+
     width: 295px;
     height: 220.909px;
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/22dfb60ac3399f617bcefa7afb7ad7d0ec45e370) white 50% / contain no-repeat;
 }
+
 /* .new-arrivals__products-detail-img:hover{
     cursor: pointer;
 } */
@@ -397,6 +408,7 @@ a {
     /* 19.2px */
     margin: 20px 0 0 0;
 }
+
 /* .new-arrivals__products-detail-name:hover{
     cursor: pointer;
 } */
@@ -412,7 +424,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .new-arrivals__products-detail-price-sale {
@@ -435,6 +447,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
+    margin: 0;
     /* 13px */
 }
 
@@ -446,7 +459,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
-    /* 11px */
+    margin: 0;
     text-decoration-line: line-through;
 }
 
@@ -489,7 +502,7 @@ a {
 
 .deal__right {
     width: 50%;
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/0b2d6b2c135a7a7e43474ef8f4a899c7f94870e8) lightgray 50% / cover no-repeat;
+    background: url(../img/Rectangle\ 38.png) lightgray 50% / cover no-repeat;
 
 }
 
@@ -565,6 +578,7 @@ a {
 }
 
 .best-seller__text-title {
+    margin: 0;
     color: var(--gray, #575454);
     text-align: center;
     /* heading */
@@ -595,14 +609,19 @@ a {
 .best-seller__products-item {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    position: relative;
+
+}
+
+.best-seller__products-item a {
+    display: block;
 }
 
 .best-seller__products-item-img {
-    position: relative;
+
     width: 295px;
     height: 220.909px;
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/b9ff0b112047c1ae08b52a4814cc46be2c347280) white 50% / contain no-repeat;
+
 }
 
 .best-seller__products-item-name {
@@ -621,7 +640,7 @@ a {
 .best-seller__products-item-star {
     display: flex;
     justify-content: center;
-
+    margin-top: 4px;
 }
 
 .best-seller__products-item-price {
@@ -629,6 +648,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .best-seller__products-item-price-sale {
@@ -641,7 +661,16 @@ a {
     line-height: 100%;
     /* 13px */
 }
-
+.best-seller__products-item-price-normal{
+    color: var(--gray, #575454);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+}
 .best-seller__products-item-price-relist {
     color: #A69E9E;
     text-align: center;
@@ -651,7 +680,7 @@ a {
     font-weight: 600;
     line-height: 100%;
     /* 11px */
-    text-decoration-line: strikethrough;
+    text-decoration-line: line-through;
 }
 
 .instagram {
@@ -659,6 +688,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    width: 100%;
 }
 
 .instagram__text {
@@ -666,11 +696,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .instagram__text-title {
     color: var(--gray, #575454);
+    margin: 0;
     /* heading */
     font-family: Coiny;
     font-size: 32px;
@@ -689,15 +720,16 @@ a {
     line-height: 130%;
 }
 
-.instagram__img {}
+.instagram__img {
+    width: 100%;
+}
 
 .instagram__img-list {
     display: flex;
 }
 
 .instagram__img-list-item {
-    width: 360px;
-    height: 311px;
+    width: 25%;
     flex-shrink: 0;
 }
 
@@ -714,13 +746,14 @@ a {
 .newsletter__text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
 }
 
 .newsletter__text-title {
     color: var(--gray, #575454);
+    margin: 0;
     /* heading */
     font-family: Coiny;
     font-size: 32px;
@@ -766,11 +799,11 @@ a {
 }
 
 .footer {
-    
     width: 100%;
-    background-color: #e7dad2;
+    background-color: #FFF8F8;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     padding: 100px;
     justify-content: space-between;
@@ -803,24 +836,28 @@ a {
 .footer__logo-media {
     display: flex;
     gap: 16px;
+
 }
 
 .footer__logo-media-facebook {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/0c367bc5637837b710406247a76c43b1ea608397) #e7dad2 50% / contain no-repeat;
+
     width: 24px;
     height: 24px;
+    background-color: #FFF8F8;
 }
 
 .footer__logo-media-instagram {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/ad15afa11f34cbf74d407e171ed49da58fb38c8b) #e7dad2 50% / contain no-repeat;
+
     width: 24px;
     height: 24px;
+    background-color: #FFF8F8;
 }
 
 .footer__logo-media-x {
-    background: url(https://www.figma.com/file/oaZBpeacFAA21JWPlTX7Ve/image/528cd6d9639246804fda5d8ead7397ce3eb60dc3) #e7dad2 50% / contain no-repeat;
+
     width: 24px;
     height: 24px;
+    background-color: #FFF8F8;
 }
 
 .footer__useful {
